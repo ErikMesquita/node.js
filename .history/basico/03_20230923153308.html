@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro contato</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+    <script>
+        
+        //var n1 = window.prompt('Digite um número') // O datatype dessa variável é STRING
+        //var n2 = window. prompt('Digite outro número') // O datatype dessa variável é STRING
+
+        //window.alert('O resultado da soma é ' + n1 + n2) // O resultado dessa operção não será a soma, e sim a junção dos valores
+
+        // Para realmente somar os valores, precisamos mostrar ao JavaScript que estamos trabalhando com números, transformando a variável de STRING para NUMBER
+
+        /*
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+        var s = n1 + n2 //se quiser mostrar o valor, você precisa armazená-lo em uma variável.
+        
+        window.alert('O resultado da soma é ' + s)
+        */
+
+        // Preste atenção no comenado de conersão o N em Number é maiúsculo e o I em parseInt também é.
+
+        // Também tem uma comando mais eficiente que é melhor utilizado pois junta os dois comandos (parseInt = números inteiros e parseFloat = números reais)
+
+        var n1 = Number.parseFloat(window.prompt('Digite um número'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+        
+        var s = n1 + n2
+
+        window.alert('O resultado da soma é ' + String(s))
+
+        // A princípio o Number não funcionou para n
+        
+    </script>
+</head>
+
+<body>
+    <h1>Utilizando comandos básicos</h1>
+</body>
+
+</html>
