@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemark</title>
+</head>
+<script>
+    window.alert(`Bem vindo ao Cinemark`)
+
+    var disponíveis = 60
+
+    var horário = 22
+
+    var valor = 30
+
+    var ingressos = Number(window.alert(`Temos ${disponíveis} para a sessão das ${horário}`))
+
+    var desejado = Number(window.prompt(`Quantos ingressos o senhor(a) deseja?`))
+
+    var total = 30 * desejado
+
+    document.write(`<h1>OK, o senhor deseja ${desejado}/${disponíveis} para a sessão das ${horário}`)
+
+    window.confirm(`O total da compra do(s) ingressos fica ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`)
+
+</script>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    h1 {
+        color: white;
+    }
+</style>
+
+<body>
+
+</body>
+
+</html>
